@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <p><input type="text" name="name" id="name" placeholder="Name" required></p>
+    <p><input type="email" name="email" id="email" placeholder="Email" required></p>
+    <p><input type="password" name="pass" id="pass" placeholder="Password" pattern=".{8,}"></p>
+    <p><label for="dob">DOB:</label><input type="date" name="dob" id="dob"></p>
+    <p><label for="gen">Gender:</label> 
+        <input type="radio" name="gen" id="gen" value="Male">Male 
+        <input type="radio" name="gen" id="gen" value="Female">Female
+        <input type="radio" name="gen" id="gen" value="Others">Others
+    </p>
+    <p><label for="remark">Remarks:</label></p>
+    <p><textarea name="remark" id="" cols="30" rows="7">please enter your additional remarks(if any)</textarea></p>
+    <p><input type="submit" value="Submit"></p>
+</body>
+</html>

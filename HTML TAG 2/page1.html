@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Marklist</title>
+    <style>
+        table{
+            border-spacing:0px;
+           
+        }
+        table,td{
+            border:1px solid black;   
+        }
+        label{
+            padding-left: 50px;
+            text-align: left;
+        }
+        input{
+            text-align: left;
+        }
+        .space{
+            padding-left: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Marklist</h1>
+    <a href="#">Home</a><br>
+    <a href="#">Mark Entry</a><br>
+    <a href="#">Mark View</a><br>
+    <a href="#">Logout</a><br>
+    <br>
+    <p>Mark Entry</p>
+    <div class="space">
+        <table>
+            <tr>
+                <td align="right"><label for="reg">Register NO:</label></td>
+                <td><input type="text" id="reg"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><u>Marks</u></center></td>
+            </tr>
+            <tr>
+                <td><label for="eng">English:</label></td>
+                <td><input type="text" id="eng"></td>
+            </tr>
+            <tr>
+                <td><label for="phy">Physics:</label></td>
+                <td><input type="text" id="phy"></td>
+            </tr>
+            <tr>
+                <td><label for="che">Chemistry:</label></td>
+                <td><input type="text" id="che"></td>
+            </tr>
+            <tr>
+                <td><label for="mat">Maths:</label></td>
+                <td><input type="text" id="mat"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><button type="submit">Save</center></button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

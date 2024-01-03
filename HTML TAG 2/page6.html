@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <style>
+        .space
+        {
+            padding-left: 200px;
+        }
+        .box
+        {
+            width:600px;
+            text-align: left;
+        }
+        form{
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="box">
+        <center>
+            <h1><u>ADMISSION FORM</u></h1>
+        </center>
+        <hr>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" id ="name" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="fname">Father Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" id ="fname" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td>:</td>
+                    <td><input type="date" id ="dob" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="dept">Department</label></td>
+                    <td>:</td>
+                    <td><input type="text" id ="dept" size="20"></td>
+                </tr>
+            </table>
+            <br>
+            <label for="gen">Gender</label><br>
+            <input type="radio" id ="gen" name="gender">Male<br>
+            <input type="radio" id ="gen" name="gender">Female<br>
+            <div class="space"><button type="submit">Submit</button>  <button type="submit">Reset</button></div>
+        </form>
+    </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 6</title>
+    <style>
+        table,td,th{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="topping">Pizza Topping</label></td>
+            <td><input type="radio" name="topping" id="topping" value="Supreme">Supreme
+                <input type="radio" name="topping" id="topping" value="Vegetarian">Vegetarian
+                <input type="radio" name="topping" id="topping" value="Hawaiian">Hawaiian</td>
+        </tr>
+        <tr>
+            <td><label for="sauce">Pizza Sauce</label></td>
+            <td><select id="sauce"><option>Tomato</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="extras">Optional Extras</label></td>
+            <td><input type="checkbox" name="extras" id="extras" value="Extra Cheese">Extra Cheese
+                <input type="checkbox" name="extras" id="extras" value="Gluten Free Base">Gluten Free Base</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="textarea">Delivery Instructions:</label><br>
+                <textarea name="textarea" id="textarea" cols="60" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" value="Send my Order">Send my Order</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
