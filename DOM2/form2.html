@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click the button to append an item to the end of the list.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction()
+        {
+            ul = document.getElementById("myList");
+            li = document.createElement('li');
+            li.innerText="water";
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>
