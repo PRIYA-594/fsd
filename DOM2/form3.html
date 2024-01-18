@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <style>
+        h1{
+            color:green;
+        }
+        #capital{
+            color:red;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: left;
+        }
+        div{
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Select the country name to find its capital</h1>
+        Select Country:
+        <select name="country" onchange="capital(this)">
+            <option value="NEW DELHI">INDIA</option>
+            <option value="CANBERRA">AUSTRALIA</option>
+            <option value="LONDON">UNITED KINGDOM</option>
+            <option value="WASHINGTON D C">AMERICA</option>
+            <option value="BERLIN">GERMANY</option>
+        </select>
+        <br>
+        <div>Capital: <p style="border: 1px solid black;height: 30px;width: 200px;" id="capital"></p></div>
+    </center>
+    <script>
+        function capital(drop)
+        {
+            var cap = drop.options[drop.selectedIndex].value;
+            document.getElementById("capital").innerHTML=cap;
+        }
+    </script>
+</body>
+</html>
