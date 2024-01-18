@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <p>Enter the percentage:</p>
+    <input id="perc">
+    <button type="button" onclick="Validate()">Submit</button>
+    <p id="text"></p>
+    <script>
+        function Validate()
+        {
+            num = document.getElementById("perc").value;
+            str="";
+            if(num>=80 && num<=100)
+            {
+                document.getElementById("text").style.color="green"
+                str="Best"
+            }
+            else if(num>=60 && num<=79)
+            {
+                document.getElementById("text").style.color="blue"
+                str="Good"
+            }
+            else if(num>=50 && num<=59)
+            {
+                document.getElementById("text").style.color="orange"
+                str="Better"
+            }
+            else if(num<50)
+            {
+                document.getElementById("text").style.color="red"
+                str="Not Eligible"
+            }
+            document.getElementById("text").innerHTML=str;
+        }
+    </script>
+</body>
+</html>
