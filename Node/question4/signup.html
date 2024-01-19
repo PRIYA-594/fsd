@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        label,input{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="/home" method="get">
+            <label for="name">NAME:</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="mail">EMAIL ADDRESS:</label>
+            <input type="email" name="mail" id="mail"><br>
+            <label for="age">AGE:</label>
+            <input type="number" name="age" id="age"><br>
+            <label for="gen">GENDER:</label>
+            <input type="radio" name="gen" id="gen" value="Male">Male
+            <input type="radio" name="gen" id="gen" value="Female">Female<br>
+            <label for="pass">PASSWORD:</label>
+            <input type="password" name="pass" id="pass"><br>
+            <label for="cpass">CONFIRM PASSWORD:</label>
+            <input type="password" name="cpass" id="pass"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="/user/fgpwd">Forgot Password</a>
+    </center>
+</body>
+</html>
