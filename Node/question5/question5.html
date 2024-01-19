@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Entry</title>
+    <style>
+        .btn
+        {
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"><u>STUDENT MARKSHEET</u></h1>
+    <form action="/marksheet" method="post">
+        <fieldset>
+            <legend><u>STUDENT INFORMATION</u></legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                    <td><label for="fathername">Father Name:</label></td>
+                    <td><input type="text" name="fathername" id="fathername"></td>
+                </tr>
+                <tr>
+                    <td><label for="iname">Institude Name:</label></td>
+                    <td><input type="text" name="iname" id="iname"></td>
+                    <td><label for="batch">Batch:</label></td>
+                    <td><input type="text" name="batch" id="batch"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><u>SUBJECTs MARKS</u></legend>
+            <table>
+                <tr>
+                    <td><label for="OA">Office Automation:</label></td>
+                    <td><input type="number" name="OA" id="OA"></td>Out of 100
+                </tr>
+                <tr>
+                    <td><label for="WD">Web Designing:</label></td>
+                    <td><input type="number" name="WD" id="WD"></td>Out of 100
+                </tr>
+                <tr>
+                    <td><label for="IT">IT:</label></td>
+                    <td><input type="number" name="IT" id="IT"></td>Out of 100
+                </tr>
+                <tr>
+                    <td><label for="cp">c# Programing:</label></td>
+                    <td><input type="number" name="cp" id="cp"></td>Out of 100
+                </tr>
+            </table>
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
