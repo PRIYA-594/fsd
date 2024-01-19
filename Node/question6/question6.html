@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+</head>
+<body>
+    <form action="/subscription" method="post">
+        <p><label for="name">Name:</label><input type="text" name="name" id="name"></p>
+        <p><label for="email">Email:</label><input type="email" name="email" id="email"></p>
+        <p><input type="checkbox" name="sub" id="sub">Subscribe to the News Letter</p>
+        <p><label for="format">Format of the Email:</label></p>
+        <p><input type="radio" name="format" id="format" value="HTML">HTML <input type="radio" name="format" id="format" value="Plain Text">Plain Text</p>
+        <p><label for="typeSub">Type of subscription you want:</label></p>
+        <p><select name="typeSub">
+            <option value="Standard-Free" selected="selected">Standard-Free</option>
+            <option value="Paid">Paid</option>
+        </select></p>
+        <p><label for="comment">Comments to the Editor:</label></p>
+        <p><textarea name="comment" id="comment" cols="25" rows="5"></textarea></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>
